@@ -1,0 +1,32 @@
+/* ACTIVITY page spacing refinements */
+/* Keep PROJECTS visually attached to the activity content on desktop too. */
+.story-list{padding-bottom:1rem!important}
+.story-list + #projects{padding-top:1rem!important}
+#projects{padding-top:1rem!important}
+#projects .project-grid{margin-top:1.5rem}
+#projects h2{margin-bottom:.2rem}
+
+/* Give activity descriptions enough measure so Japanese copy does not strand a few characters on a new line. */
+@media(min-width:851px){
+  .story-list .story-card{grid-template-columns:58px minmax(0,1fr)!important;gap:30px!important}
+  .story-list .story-card>div{min-width:0;max-width:1040px}
+  .story-list .story-card p{max-width:960px!important;text-wrap:pretty;line-break:strict;word-break:normal}
+}
+
+@media(max-width:700px){
+  .story-list{padding-bottom:.65rem!important}
+  .story-list + #projects{padding-top:.65rem!important}
+  #projects{padding-top:.65rem!important;padding-left:1.75rem!important;padding-right:1.75rem!important;padding-bottom:3rem!important}
+  #projects .project-grid{margin-top:1.15rem}
+  #projects h2{margin-bottom:.15rem}
+}
+
+
+.activity-title-phrase{display:inline-block}
+@media(max-width:700px){
+.story-list .story-card{grid-template-columns:40px minmax(0,1fr)!important;gap:18px!important;padding:30px 0}
+.story-list .card-number{width:40px;height:40px}
+.story-list .story-card>div{min-width:0}
+.story-list .story-card h3{font-size:clamp(20px,5.5vw,25px);line-height:1.5;letter-spacing:-.025em;text-wrap:pretty}
+.story-list .story-card p{font-size:14px;line-height:1.85;text-wrap:pretty}
+}
