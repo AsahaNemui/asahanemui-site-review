@@ -1,0 +1,12 @@
+/* Keep image links/buttons clickable and scrollable; suppress native save callouts. */
+img, picture, svg, canvas, .logo-motion, [data-image-protected],
+a:has(img), a:has(picture), a:has(svg), button:has(img) {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Watermarks are baked into the generated media files, not removable CSS layers. */
+.project-photos a { display: block; }
+.character-trigger .character-open-label { z-index: 4; }
