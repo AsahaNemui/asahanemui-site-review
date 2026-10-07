@@ -1,0 +1,137 @@
+/* Final FASHION SHOW spacing and image-transition polish. */
+
+/* Give the manifesto one clear, equal rhythm above and below. */
+@media(min-width:851px){
+  .fashion-about{
+    --fashion-manifesto-gap:clamp(5rem,6vw,6.25rem)!important;
+    padding-bottom:var(--fashion-manifesto-gap)!important;
+  }
+  .fashion-manifesto{
+    margin-top:var(--fashion-manifesto-gap)!important;
+  }
+
+  /* FULL and FACE share one immovable visual frame on desktop. */
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual,
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{
+    width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:auto!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+  }
+
+  .fashion-dialog__visual img,
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual img,
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual img{
+    top:1rem!important;
+    left:1.15rem!important;
+    width:calc(100% - 2.3rem)!important;
+    height:calc(100% - 2.35rem)!important;
+    max-width:none!important;
+    max-height:none!important;
+    margin:0!important;
+    padding:0!important;
+    aspect-ratio:auto!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    transform-origin:center center;
+    transition:opacity .34s ease,transform .46s cubic-bezier(.16,1,.3,1),filter .46s ease!important;
+  }
+
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual img{
+    filter:drop-shadow(0 18px 44px rgba(0,0,0,.22));
+  }
+
+  /* Fade the old artwork away before the already-preloaded replacement appears. */
+  .fashion-dialog__visual.is-switching img{
+    opacity:0!important;
+    transform:scale(.975)!important;
+    filter:blur(2px) drop-shadow(0 12px 30px rgba(0,0,0,.16))!important;
+  }
+
+  /* One geometric center line for every major FASHION SHOW block. */
+  .fashion-about,
+  .fashion-collection__head,
+  .fashion-look-grid{
+    box-sizing:border-box!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .fashion-about{
+    width:min(1180px,calc(100% - clamp(3rem,8vw,9rem)))!important;
+    max-width:none!important;
+  }
+  .fashion-collection{
+    padding-left:clamp(2rem,4vw,5rem)!important;
+    padding-right:clamp(2rem,4vw,5rem)!important;
+  }
+  .fashion-collection__head,
+  .fashion-look-grid{
+    width:min(1320px,100%)!important;
+    max-width:1320px!important;
+  }
+  .fashion-collection__head{
+    position:relative!important;
+    grid-template-columns:120px minmax(0,1fr) 120px!important;
+    column-gap:clamp(1.25rem,3vw,2.5rem)!important;
+  }
+  .fashion-collection__index{
+    grid-column:1!important;
+    justify-self:start!important;
+  }
+  .fashion-collection__title{
+    grid-column:2!important;
+    width:min(100%,1040px)!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .fashion-collection__title p{
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  .fashion-next>*{
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .fashion-next h2,
+  .fashion-next p,
+  .fashion-next strong{
+    text-align:center!important;
+  }
+  .fashion-return{
+    width:min(1180px,calc(100% - clamp(3rem,8vw,9rem)))!important;
+    max-width:none!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
+
+@media(max-width:850px){
+  .fashion-about{
+    --fashion-manifesto-gap:clamp(3.4rem,9vw,4.25rem)!important;
+    padding-bottom:var(--fashion-manifesto-gap)!important;
+  }
+  .fashion-manifesto{
+    margin-top:var(--fashion-manifesto-gap)!important;
+  }
+
+  /* On phones the frame may change height, so soften the artwork change itself. */
+  .fashion-dialog__visual img{
+    transition:opacity .34s ease,transform .44s cubic-bezier(.16,1,.3,1)!important;
+  }
+  .fashion-dialog__visual.is-switching img{
+    opacity:0!important;
+    transform:scale(.985)!important;
+  }
+
+  /* Keep the mobile blocks centered inside one consistent gutter. */
+  .fashion-about,
+  .fashion-collection__head,
+  .fashion-look-grid,
+  .fashion-return{
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
