@@ -1,0 +1,1175 @@
+{
+  "name": "あさはねむゐ",
+  "romanized": "ASAHA NEMUI",
+  "tagline": "歌、言葉、芸術。",
+  "intro": "京都出身、関西弁のおしゃべり好きな個人勢VTuber。歌ってみたと雑談を中心に、ゲーム実況や企画にも取り組んでいます。いつだってねむい。",
+  "facts": [
+    {
+      "label": "誕生日",
+      "value": "7月13日"
+    },
+    {
+      "label": "デビュー日",
+      "value": "6月13日"
+    },
+    {
+      "label": "出身",
+      "value": "京都"
+    },
+    {
+      "label": "イメージカラー",
+      "value": "オーロラ"
+    },
+    {
+      "label": "ファンマーク",
+      "value": "🍣💤"
+    },
+    {
+      "label": "ファンネーム",
+      "value": "ラブリーチャーミング（LC）"
+    },
+    {
+      "label": "好きなもの",
+      "value": "歌・映画・舞台・芸術・ゲーム・ファッション・寿司"
+    }
+  ],
+  "about": {
+    "activities": [
+      "雑談配信",
+      "歌ってみた・歌配信",
+      "ファッションショー",
+      "ゲーム実況・マダミス・TRPG"
+    ],
+    "favorites": [
+      "歌、うたうこともきくことも好き。",
+      "映画が大好き。最近はミステリー、ホラー、サイコ系をよく見る。魔法・アクション・ミュージカルも好き。",
+      "舞台、あの空間で空気が震えるのが好き。",
+      "ゲーム、1番好きなのはNieR（無印）。KHは全部やった。"
+    ],
+    "personal": [
+      "時間の使い方はちょっと苦手",
+      "不眠症で太陽が苦手",
+      "夢は大きな舞台に立つこと、アパレル展開、寿司屋さんとのタイアップ"
+    ],
+    "mystery": [
+      "ヒマワリの咲く季節 ドタバタわんわんミステリー",
+      "狂気山脈3 薄明三角点 ― 医者視点",
+      "狂気山脈2 星ふる天辺 ― 医者視点",
+      "狂気山脈 陰謀の分水嶺 ― 医者視点",
+      "Jモリアーティの暗躍",
+      "宇宙ゴリラパンデミック！",
+      "亡霊島殺人事件"
+    ],
+    "trpg": [
+      "ハッピーエンドデスゲーム"
+    ],
+    "showcase": {
+      "label": "showcase.A",
+      "url": "https://lit.link/showcase_a"
+    }
+  },
+  "music": [
+    {
+      "number": "01",
+      "title": "歌ってみた",
+      "body": "毎月13日に歌ってみたを投稿。好きな曲も、まだ知らなかった曲も、自分の声で届けています。",
+      "linkLabel": "歌ってみたの再生リストへ",
+      "url": "https://www.youtube.com/playlist?list=PLWDQOZM9jgrCazo9MdcDKwB6UZWd9NSiP"
+    },
+    {
+      "number": "02",
+      "title": "雑談・歌配信",
+      "body": "よく喋って、よく笑う配信。歌とおしゃべりを一緒に楽しんでください。配信予定はYouTubeとXでお知らせします。",
+      "linkLabel": "配信を見に行く",
+      "url": "https://www.youtube.com/@nemui-asaha/streams"
+    },
+    {
+      "number": "03",
+      "title": "ゲーム実況",
+      "body": "ゲーム実況は専用チャンネルで配信・公開しています。",
+      "linkLabel": "ゲームチャンネルを見る",
+      "url": "https://www.youtube.com/@nemui-asaha-gamech"
+    }
+  ],
+  "coverSongs": [
+    {
+      "title": "チョイス",
+      "artist": "NAME.O",
+      "videoId": "pLn4q_nuSX8",
+      "type": "SOLO COVER",
+      "publishedAt": "2026-09-13T11:00:00+09:00"
+    },
+    {
+      "title": "愛じゃない",
+      "artist": "DAZBEE",
+      "videoId": "koO5zrjYVlc",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Seven Notes",
+      "artist": "メガテラ・ゼロ",
+      "videoId": "mMEA_36tfSE",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "最初はキュン！",
+      "artist": "中島健人",
+      "videoId": "gC10P6XGtVc",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "忘れじの言の葉",
+      "artist": "未来古代楽団 feat. 安次嶺希和子",
+      "videoId": "ICoXXTm-XGA",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "正解",
+      "artist": "RADWIMPS",
+      "videoId": "FN3f3dQKdfE",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "セレナーデ",
+      "artist": "なとり",
+      "videoId": "40_7W7UUxn0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Value",
+      "artist": "Ado",
+      "videoId": "C4jA8L-FZ-s",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "DRESSING ROOM",
+      "artist": "なとり",
+      "videoId": "1P1mH449JIA",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "カートゥーンガール",
+      "artist": "Kanaria",
+      "videoId": "26DJnYThqAM",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ジェーンは凍っていた",
+      "artist": "うずら",
+      "videoId": "OjUgkIAV-_0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Mrs pumpkinの滑稽な夢",
+      "artist": "ハチ",
+      "videoId": "I1oEiAYPCxc",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "IRIS OUT",
+      "artist": "米津玄師",
+      "videoId": "_1B2h9LACZs",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "リードコントロール",
+      "artist": "なるみや",
+      "videoId": "jzyI3h29XO0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "プレイ (PLAY)",
+      "artist": "Giga",
+      "videoId": "rYz35ou7DDA",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "プロポーズ",
+      "artist": "内緒のピアス",
+      "videoId": "oqpWW9qCpio",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ビターチョコデコレーション",
+      "artist": "syudou",
+      "videoId": "gyGHZ5M0XIs",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Rumor",
+      "artist": "ポリスピカデリー",
+      "videoId": "8Rtb06U_a4s",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "チンチロリズム",
+      "artist": "9Lana",
+      "videoId": "TguPPHkrjTM",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "エルフ",
+      "artist": "Ado",
+      "videoId": "lVfJh2j4ICA",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "春愁",
+      "artist": "Mrs. GREEN APPLE",
+      "videoId": "k60TGMOhPpo",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "蜜月アン・ドゥ・トロワ",
+      "artist": "DATEKEN",
+      "videoId": "JoiBP8KJVec",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ACTOR",
+      "artist": "友成空",
+      "videoId": "dToCuxO-MF0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "BLINK GONE | Alien Stage",
+      "artist": "BL8M・AKUGETSU",
+      "videoId": "vrQyk7VN-xY",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Poison(A Hazbin Hotel Song)",
+      "artist": "Blake Roman・Sam Haft・Andrew Underberg",
+      "videoId": "SQlqPQT95rM",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "A whole new world / ジャスミンパート",
+      "artist": "Alan Menken（『アラジン』より）",
+      "videoId": "QJJetIp0uzU",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "INSANE (A Hazbin Hotel Song)",
+      "artist": "Black Gryph0n & Baasik",
+      "videoId": "zGnbHOjXqRs",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Happy Halloween",
+      "artist": "Junky",
+      "videoId": "rXckVfxkj7s",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ヨルシカ - 忘れてください",
+      "artist": "ヨルシカ",
+      "videoId": "oDp1OhsXqgI",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Seven",
+      "artist": "Jung Kook feat. Latto",
+      "videoId": "AQ-F0FqLj0o",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "フィナーレ。",
+      "artist": "eill",
+      "videoId": "lGYo2XCOtc4",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "私が明日死ぬなら",
+      "artist": "キタニタツヤ",
+      "videoId": "p3xC9YKnLQg",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ジェニ",
+      "artist": "¿?shimon",
+      "videoId": "gDGbWlZJtxk",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Live Devil",
+      "artist": "Da-iCE feat. 木村昴",
+      "videoId": "nKH603tEcaI",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ナハトムジーク",
+      "artist": "Mrs. GREEN APPLE",
+      "videoId": "LrYJ7mO5j70",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Bling-Bang-Bang-Born",
+      "artist": "Creepy Nuts",
+      "videoId": "hWEOss7NAnU",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Loveit?",
+      "artist": "biz×ZERA feat. LOLUET",
+      "videoId": "e5I-JRu4B0E",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "アンラブレス",
+      "artist": "Mrs. GREEN APPLE",
+      "videoId": "RHA38_aG1d8",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "永遠のあくる日",
+      "artist": "Ado",
+      "videoId": "6Y7692V1Rds",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "唱",
+      "artist": "Ado",
+      "videoId": "n6BIYemJvRE",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ありがとう",
+      "artist": "SUPER BEAVER",
+      "videoId": "L08qiuYXVos",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Just Be Friends",
+      "artist": "Dixie Flatline",
+      "videoId": "SiVstz82sz0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "エウレカ",
+      "artist": "なとり",
+      "videoId": "_N6w7IqW82Q",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "少女レイ",
+      "artist": "みきとP",
+      "videoId": "H8qANrr15YI",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ダーリン",
+      "artist": "須田景凪",
+      "videoId": "6yrxRxH__6w",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "魔法のない世界で生きるということ",
+      "artist": "Euluca Lab.",
+      "videoId": "TB5vy1Kt8i8",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "G4L",
+      "artist": "Giga",
+      "videoId": "j8zmnX3qgBk",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "ハッピーエンド",
+      "artist": "back number",
+      "videoId": "FTC2C7A_-gc",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "フライデー・ナイト",
+      "artist": "なとり",
+      "videoId": "8IXjDCzcTWg",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "虎視眈々",
+      "artist": "梅とら",
+      "videoId": "dYYr7OOAhwg",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "食虫植物",
+      "artist": "理芽",
+      "videoId": "89TnSq9yNTc",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "from Y to Y",
+      "artist": "ジミーサムP",
+      "videoId": "sSElUUtIDLM",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "猿芝居",
+      "artist": "なとり",
+      "videoId": "wG9ufAH3yU8",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "『 愛するように 』",
+      "artist": "MIMI",
+      "videoId": "6k3CEe53xLQ",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "私じゃなかったんだね。",
+      "artist": "りりあ。",
+      "videoId": "02on2OcO9vk",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "夜永唄",
+      "artist": "神はサイコロを振らない",
+      "videoId": "xCpQbiV95wQ",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "シネマ",
+      "artist": "Ayase",
+      "videoId": "msSTKB7Scq8",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "flos",
+      "artist": "R Sound Design",
+      "videoId": "kAZyolGrSL0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "Overdose",
+      "artist": "なとり",
+      "videoId": "RR30v1mapNY",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "CH4NGE",
+      "artist": "Giga",
+      "videoId": "k8S6GOGwWTg",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "橙一点",
+      "artist": "獅子志司",
+      "videoId": "aiTkC96Fp-k",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "KING",
+      "artist": "Kanaria",
+      "videoId": "DPyuiNyRMHw",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "キャットラビング",
+      "artist": "香椎モイミ",
+      "videoId": "Jk03ihp4Bb0",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "酔いどれ知らず",
+      "artist": "Kanaria",
+      "videoId": "FzXKVm1ayLU",
+      "type": "SOLO COVER"
+    },
+    {
+      "title": "かくれんぼ",
+      "artist": "優里",
+      "videoId": "TPgFRdTvz1Y",
+      "type": "SOLO COVER"
+    }
+  ],
+  "originalSongs": [
+    {
+      "title": "Aurora",
+      "artist": "あさはねむゐ",
+      "videoId": "-hTa1S_I0wM",
+      "type": "ORIGINAL SONG"
+    },
+    {
+      "title": "OTU★NEMU",
+      "artist": "あさはねむゐ",
+      "videoId": "iJwkZ8m6Ey4",
+      "type": "ORIGINAL SONG"
+    }
+  ],
+  "collabSongs": [
+    {
+      "title": "main dishが足りてない",
+      "artist": "宮守文学",
+      "videoId": "HKOkUWmIA6M",
+      "type": "COLLABORATION",
+      "group": "THE1order",
+      "collaborators": [
+        "新島らんぷ",
+        "涅埜レヌ",
+        "すいと"
+      ],
+      "publishedAt": "2026-10-04T11:00:08.000Z"
+    },
+    {
+      "title": "De Lu Lu",
+      "artist": "VOLTACTION",
+      "videoId": "zkjlyAf3mPM",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "明狸柊",
+        "音御光歌",
+        "シアン・ヴァニティ",
+        "白噛ましゅー",
+        "ばしぽ"
+      ],
+      "group": "ASCABO",
+      "publishedAt": "2026-08-08T12:00:06.000Z"
+    },
+    {
+      "title": "JANE DOE",
+      "artist": "米津玄師・宇多田ヒカル",
+      "videoId": "oAKvDKww6Dw",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "新島らんぷ"
+      ],
+      "publishedAt": "2026-05-24T11:00:05.000Z"
+    },
+    {
+      "title": "DiVE !N",
+      "artist": "ROF-MAO",
+      "videoId": "Ft_-Jt440r0",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "白噛ましゅー",
+        "シアン・ヴァニティ",
+        "明狸柊",
+        "ばしぽ",
+        "音御光歌"
+      ],
+      "group": "ビジュゐゐじゃん",
+      "publishedAt": "2026-02-14T10:00:06.000Z"
+    },
+    {
+      "title": "パンドラの牢獄",
+      "artist": "DarkestoRy",
+      "videoId": "JbfY_HekpNg",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "オマル・ド・ボンヌ",
+        "詠れしな",
+        "鳴ノ世ユウト"
+      ],
+      "publishedAt": "2026-01-04T03:00:06.000Z"
+    },
+    {
+      "title": "THE VILLAIN'S NIGHT",
+      "artist": "Caper Parad",
+      "videoId": "rndI2oIR21s",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "京墓宵海",
+        "高梨凜吾",
+        "響缺リタ",
+        "狼瞬"
+      ],
+      "publishedAt": "2025-10-31T11:00:06.000Z"
+    },
+    {
+      "title": "レクイエム",
+      "artist": "Kanaria",
+      "videoId": "7v444uz6oW4",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "group": "ROZETTA",
+      "publishedAt": "2025-04-30T12:00:07.000Z"
+    },
+    {
+      "title": "A whole new world",
+      "artist": "Alan Menken（『アラジン』より）",
+      "videoId": "bmWYbbNln0o",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "言代アクト"
+      ],
+      "publishedAt": "2024-10-31T11:00:06.000Z"
+    },
+    {
+      "title": "ファタール",
+      "artist": "GEMN",
+      "videoId": "IntotZ3mcNY",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "group": "ROZETTA",
+      "publishedAt": "2024-10-07T13:30:27.000Z"
+    },
+    {
+      "title": "ライオン",
+      "artist": "May’n・中島愛",
+      "videoId": "GG6DBdZwY5I",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "オマル・ド・ボンヌ"
+      ],
+      "publishedAt": "2024-09-18T11:00:07.000Z"
+    },
+    {
+      "title": "推しの魔法",
+      "artist": "LIP×LIP / HoneyWorks",
+      "videoId": "0U_qbGFQqbc",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "group": "ROZETTA",
+      "publishedAt": "2024-05-31T11:00:07.000Z"
+    },
+    {
+      "title": "ノンファンタジー",
+      "artist": "LIP×LIP / HoneyWorks",
+      "videoId": "uS2rtLsU3_A",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "group": "ROZETTA",
+      "publishedAt": "2024-05-19T12:01:00.000Z"
+    },
+    {
+      "title": "トウキョウ・シャンディ・ランデヴ",
+      "artist": "MAISONdes feat. 花譜・ツミキ",
+      "videoId": "F9XLwLSvwmg",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "けったろ"
+      ],
+      "publishedAt": "2023-12-13T11:00:07.000Z"
+    },
+    {
+      "title": "1・2・3",
+      "artist": "After the Rain",
+      "videoId": "komxEDYUcE8",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "group": "ROZETTA",
+      "publishedAt": "2023-10-10T11:00:10.000Z"
+    },
+    {
+      "title": "睡蓮花",
+      "artist": "湘南乃風",
+      "videoId": "Sgjptmhkq2c",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "明狸柊"
+      ],
+      "group": "関西卍魂",
+      "publishedAt": "2023-08-26T12:45:08.000Z"
+    },
+    {
+      "title": "magnet",
+      "artist": "みなと（流星P）",
+      "videoId": "ThwbwrPjmx4",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "直枝律"
+      ],
+      "group": "DD",
+      "publishedAt": "2023-08-26T12:30:07.000Z"
+    },
+    {
+      "title": "DOGLAND",
+      "artist": "PEOPLE 1",
+      "videoId": "7Pc2G7Mmvik",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "直枝律"
+      ],
+      "publishedAt": "2023-07-14T10:00:07.000Z"
+    },
+    {
+      "title": "damn",
+      "artist": "藤井 風",
+      "videoId": "FtPFuafCLTY",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "直枝律"
+      ],
+      "publishedAt": "2023-06-23T12:00:12.000Z"
+    },
+    {
+      "title": "ジュリエッタ",
+      "artist": "LIP×LIP / HoneyWorks",
+      "videoId": "pMdGCBWf57Q",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "publishedAt": "2023-04-14T13:00:09.000Z"
+    },
+    {
+      "title": "ロメオ",
+      "artist": "HoneyWorks",
+      "videoId": "QUyjiBuf_fs",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト"
+      ],
+      "publishedAt": "2023-03-14T12:00:08.000Z"
+    },
+    {
+      "title": "虎視眈々",
+      "artist": "梅とら",
+      "videoId": "FEbedhvQ0GY",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "藍衣タクト",
+        "明狸柊",
+        "蛙水みどり",
+        "言代アクト",
+        "雪華みなと",
+        "直枝律",
+        "猫狸色人",
+        "氷織みなと"
+      ],
+      "group": "UP TO YOU project",
+      "publishedAt": "2023-02-24T13:00:13.000Z"
+    },
+    {
+      "title": "おもかげ",
+      "artist": "milet×Aimer×幾田りら",
+      "videoId": "bfTet0GtcYk",
+      "type": "COLLABORATION",
+      "collaborators": [
+        "Nerine",
+        "epi"
+      ],
+      "publishedAt": "2022-12-25T15:00:11.000Z"
+    }
+  ],
+  "activity": [
+    {
+      "number": "01",
+      "title": "企画・イベント",
+      "body": "開催情報と参加方法はXで告知を確認してください。",
+      "linkLabel": "Xで最新のお知らせを見る",
+      "url": "https://x.com/asa_nemui_zzz"
+    },
+    {
+      "number": "02",
+      "title": "キャラクターグッズ",
+      "body": "あさはねむゐがデザインを中心に手がける、アクリルグッズなどのキャラクターグッズ。販売状況はショップでご確認ください。",
+      "linkLabel": "グッズショップへ",
+      "url": "https://asaha-nemui-shop.booth.pm/"
+    },
+    {
+      "number": "03",
+      "title": "ファッション系グッズ",
+      "body": "衣装や世界観から広がる、あさはねむゐがデザインを中心に手がけるファッション系グッズ。",
+      "linkLabel": "ファッションショップへ",
+      "url": "https://asaha-nemui.booth.pm/"
+    },
+    {
+      "number": "04",
+      "title": "コラボ・お仕事",
+      "body": "企業・活動者からのお問い合わせは、相談フォームまたはXのDMへ。スケジュールや企画内容を添えてご連絡ください。",
+      "linkLabel": "XのDMへ",
+      "url": "https://x.com/asa_nemui_zzz",
+      "formUrl": "/projects/showcase-a/contact/"
+    }
+  ],
+  "tags": [
+    {
+      "label": "ファンマーク",
+      "value": "🍣💤",
+      "detail": "寿司好き、いつもねむい。"
+    },
+    {
+      "label": "ファンネーム",
+      "value": "ラブリーチャーミング / LC",
+      "detail": ""
+    },
+    {
+      "label": "総合",
+      "value": "#あさはねむゐ",
+      "detail": ""
+    },
+    {
+      "label": "ファンアート",
+      "value": "#ネムインアート",
+      "detail": "サムネイルにも使わせてください。"
+    },
+    {
+      "label": "R18・センシティブ",
+      "value": "#裏ネムインアート",
+      "detail": "通常のファンアートタグと分けてください。"
+    },
+    {
+      "label": "発見",
+      "value": "#ねむねむみっけ",
+      "detail": "広告や街中で見つけたときに。"
+    },
+    {
+      "label": "映画感想",
+      "value": "#ねむゐの映画館",
+      "detail": "初見ネタバレ防止のため、タイトルを1つ目のポストに入れず、感想はツリーへ。"
+    },
+    {
+      "label": "配信",
+      "value": "#ねむゐのおやすみコール",
+      "detail": "配信中の拡散や切り抜きに。"
+    },
+    {
+      "label": "みんなから",
+      "value": "#みてみてねむねむ",
+      "detail": "見てほしいもの、伝えたいことに。"
+    }
+  ],
+  "guidelines": [
+    {
+      "title": "配信に参加するとき",
+      "paragraphs": [
+        "楽しく参加してもらうため、ルールは必要な範囲にしています。高評価・コメント・共有も嬉しいです。"
+      ],
+      "points": [
+        "嫌がらせ、マイナスな発言、過激な言葉やネタバレは控えてください。",
+        "リスナー同士の喧嘩や指示、リスナー同士だけの会話は控えてください。",
+        "状況によって予告なしにタイムアウトや非表示にする場合があります。"
+      ]
+    },
+    {
+      "title": "Xでの交流とDM",
+      "paragraphs": [
+        "リプライは歓迎です。気まぐれに返信します。通知を見落とすこともあるので、返事がなくても気にしないでください。ファンアートはタグ付きの投稿を基本的に拡散しています。",
+        "DMは基本的に企業・活動者からの連絡用です。ファンからの相談や感想はマシュマロをご利用ください。"
+      ],
+      "points": []
+    },
+    {
+      "title": "二次創作・ファンアート",
+      "paragraphs": [
+        "ファンアートは大歓迎です。Xでは #ネムインアート を付けると見つけやすくなります。投稿いただいた作品を活動で使用する場合があります。"
+      ],
+      "points": [
+        "営利目的での制作・利用はできません。非営利のイラスト本や同人誌は黙認しています。",
+        "公式の写真や立ち絵をSNSアイコン・動画などに転用しないでください。無許可のグッズ制作や、誤認を招く使い方もできません。",
+        "R18作品やグロテスクな作品は通常タグを使わず #裏ネムインアート へ。",
+        "立ち絵・動画の一部を切り抜いて過激なネタ作品にすることや、悪意ある画像・動画の制作はできません。"
+      ]
+    },
+    {
+      "title": "AIへの読み込み",
+      "paragraphs": [
+        "あさはねむゐが提供する立ち絵・イラスト・写真・動画・音声など、すべてのコンテンツをAIに読み込ませないでください。学習用データとしての利用に加え、画像生成や加工、文章・音声生成のための入力や参照画像として使うことも含みます。",
+        "コラージュアプリや写真加工アプリなども、アップロードした素材をサービス側が利用できる規約の場合があります。画像を預ける前に利用規約を確認し、該当するサービスには読み込ませないでください。"
+      ],
+      "points": []
+    },
+    {
+      "title": "立ち絵・その他画像の使用",
+      "paragraphs": [
+        "公式の立ち絵、写真、イラスト、動画から切り出した画像は、あさはねむゐ本人と制作に関わった方のための素材です。画像の保存や鑑賞は構いませんが、許可なく再投稿・再配布したり、ご自身の発信素材として使用したりしないでください。"
+      ],
+      "points": [
+        "SNSのアイコン・ヘッダーや動画のサムネイルに公式画像を使わないでください。",
+        "トリミングや加工をした画像も、無断転載や公式と誤認される形での使用は控えてください。",
+        "グッズ・印刷物などへの転用や、収益化を伴う利用はしないでください。ファンアートは上記の二次創作の案内をご確認ください。"
+      ]
+    },
+    {
+      "title": "動画の切り抜き",
+      "paragraphs": [
+        "配信の切り抜きは歓迎します。内容が伝わる範囲で編集していただけますが、大きな改変はしないでください。Xに投稿する場合、事前確認は不要です。投稿後にお知らせいただければ大丈夫です。",
+        "歌の切り抜きは著作権の関係で、あさはねむゐ以外の方は投稿できません。内容に語弊が生じる編集や問題が見受けられた場合には、投稿の削除をお願いすることがあります。",
+        "あさはねむゐのXやYouTubeでの投稿用に制作いただける場合は、元動画のURLと動画データを、ギガファイル便などを利用してマシュマロからお送りください。内容や投稿のタイミングによって掲載できないことがあるため、投稿をお約束するものではありません。約1か月経っても投稿されなかった場合は、現時点では掲載が難しいものと受け取っていただいて構いません。"
+      ],
+      "points": [
+        "こちらで投稿するためにお送りいただいた動画は、先に、または後からご自身のXやほかの媒体へ投稿しないでください。",
+        "現在の活動先はXとYouTubeです。それ以外のプラットフォームへ無断でアップロードしないでください。"
+      ]
+    }
+  ],
+  "fanArtBrief": {
+    "features": [
+      "前髪だけ銀（白）髪で、そのほかは金髪",
+      "瞳は紫と青",
+      "正面右側の耳に3連ピアス、左側は穴のないイヤーカフ",
+      "正面右側に八重歯",
+      "ネイルあり。衣装に合わせた髪型やネイルの変更は可能"
+    ],
+    "uses": [
+      "SNSのアイコン・ヘッダー、収益化されたYouTubeのサムネイル",
+      "ネットプリントや待ち受けなど、リスナーへの無料配布"
+    ],
+    "notes": [
+      "依頼条件は各イラストレーターのルールに従ってください。"
+    ],
+    "illustrators": "https://x.com/i/lists/1856356435791331439"
+  },
+  "record": [
+    {
+      "year": "2026",
+      "items": [
+        "9月28日発売 小学館『flowers』掲載（THE FIRST ORDER）",
+        "9月28日（月）発売『VTuberスタイル 2026年10月号』掲載（THE FIRST ORDER）",
+        "3月18日発売『週刊TVガイド』掲載",
+        "Piacetto様との概念アクセサリーコラボ販売（3〜4月）",
+        "株式会社IGG Japan様『ドゥームズデイ ラストサバイバー 頂上決戦 vol.12』1位・優勝（1〜2月）",
+        "1月28日発売『VTuberスタイル 2026年2月号』掲載"
+      ]
+    },
+    {
+      "year": "2025",
+      "items": [
+        "12月24日発売『VOICE STARS vol.36』掲載",
+        "株式会社Donuts様『ときめきVR ときめきパレード Vol.15』1位（9月13日・大阪）",
+        "新宿・ユニカビジョン、イクフェス サイネージパネル広告（4月25日）"
+      ]
+    },
+    {
+      "year": "2024",
+      "items": [
+        "11月28日発売『VTuberスタイル 2024年12月号』掲載",
+        "ガチャイチタウン渋谷MODI店 モニター付きガチャ什器（11月）",
+        "株式会社IGG Japan様『ロードモバイル ストリーマー対抗戦 vol.25』2位・準優勝（9〜10月）",
+        "9月24日発売 小学館『Cheese!』掲載（UTY）",
+        "9月27日発売 東京ニュース通信社『TVガイド VOICE STARS』掲載（UTY）",
+        "海浜幕張駅 有志サイネージ広告（6月）",
+        "7月10日発売『アニメージュ』掲載"
+      ]
+    },
+    {
+      "year": "2023",
+      "items": [
+        "新宿・ユニカビジョン 夏男イベント4位のサイネージパネル広告（10月23〜29日）",
+        "横浜・自遊空間SELF横浜西口店 集合パネル、AIポスター、コミック紹介ポスターなど（4月）",
+        "兵庫・駅ポスサイネージ広告（3月27日〜4月2日）"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "YouTube / メインチャンネル",
+      "detail": "歌ってみた・雑談・配信",
+      "url": "https://www.youtube.com/@nemui-asaha",
+      "group": "見る・聴く"
+    },
+    {
+      "label": "YouTube / ゲームチャンネル",
+      "detail": "ゲーム実況の配信・動画",
+      "url": "https://www.youtube.com/@nemui-asaha-gamech",
+      "group": "見る・聴く"
+    },
+    {
+      "label": "X",
+      "detail": "告知・日々のこと・企業やコラボの連絡先",
+      "url": "https://x.com/asa_nemui_zzz",
+      "group": "つながる"
+    },
+    {
+      "label": "TikTok",
+      "detail": "ショート動画",
+      "url": "https://www.tiktok.com/@nemui_asaha_",
+      "group": "見る・聴く"
+    },
+    {
+      "label": "FANBOX",
+      "detail": "日記と少しプライベートなこと",
+      "url": "https://nemui-asaha.fanbox.cc/",
+      "group": "つながる"
+    },
+    {
+      "label": "マシュマロ",
+      "detail": "相談や感想はこちらへ",
+      "url": "https://marshmallow-qa.com/asa_nemui_zzz",
+      "group": "つながる"
+    },
+    {
+      "label": "キャラクターグッズ",
+      "detail": "BOOTH / asaha-nemui-shop",
+      "url": "https://asaha-nemui-shop.booth.pm/",
+      "group": "ショップ"
+    },
+    {
+      "label": "ファッション系グッズ",
+      "detail": "BOOTH / asaha-nemui",
+      "url": "https://asaha-nemui.booth.pm/",
+      "group": "ショップ"
+    },
+    {
+      "label": "LINEスタンプ",
+      "detail": "スタンプ販売ページ",
+      "url": "https://line.me/S/sticker/23845450/",
+      "group": "ショップ"
+    },
+    {
+      "label": "giftee",
+      "detail": "ギフティ / ギフトを贈る",
+      "url": "https://giftee.com/u/nemui_asaha",
+      "group": "贈る・応援する"
+    },
+    {
+      "label": "Gipt",
+      "detail": "ギプト / ほしいものリスト",
+      "url": "https://gi-pt.com/main/wishlist/fan-view/3a103c26-e1c1-803b-d23f-79a3d3122b45",
+      "group": "贈る・応援する"
+    },
+    {
+      "label": "どねる",
+      "detail": "配信や活動を応援する",
+      "url": "https://doneru.jp/nemui-asaha/login",
+      "group": "贈る・応援する"
+    },
+    {
+      "label": "ご相談・お問い合わせ",
+      "detail": "出演・制作のご依頼、コラボ・企画のご相談",
+      "url": "/projects/showcase-a/contact/",
+      "group": "お問い合わせ"
+    }
+  ],
+  "musicCatalog": {
+    "source": "https://www.youtube.com/playlist?list=PLWDQOZM9jgrCazo9MdcDKwB6UZWd9NSiP",
+    "checkedAt": "2026-09-27",
+    "sourceCount": 87
+  },
+  "characterImages": [
+    {
+      "src": "/characters/black-full.png",
+      "label": "BLACK＆Aurora / 通常衣装",
+      "alt": "黒の衣装の全身立ち絵",
+      "kind": "full",
+      "width": 1152,
+      "height": 2048,
+      "description": "黒にオーロラの光を重ねた、いつもの衣装。"
+    },
+    {
+      "src": "/characters/purple-full.png",
+      "label": "PURPLE / デート衣装",
+      "alt": "紫の衣装でカップを持った全身立ち絵",
+      "kind": "full",
+      "width": 814,
+      "height": 2048,
+      "description": "紫をまとった、少し特別な日の装い。"
+    },
+    {
+      "src": "/characters/black-smile.png",
+      "label": "UP / 通常衣装",
+      "alt": "黒の衣装で微笑むあさはねむゐ",
+      "kind": "portrait",
+      "width": 2048,
+      "height": 1152,
+      "description": "UPの通常衣装。歌うときの、いつもの表情。"
+    },
+    {
+      "src": "/characters/purple-wink.png",
+      "label": "UP / デート衣装",
+      "alt": "メガネをかけてウインクするあさはねむゐ",
+      "kind": "portrait",
+      "width": 2048,
+      "height": 1152,
+      "description": "UPのデート衣装。少し近くで、目が合う一枚。"
+    },
+    {
+      "src": "/assets/kv-standing.png",
+      "label": "KEY VISUAL / 全身",
+      "alt": "通常衣装で手を伸ばすあさはねむゐの全身キービジュアル",
+      "kind": "full",
+      "width": 1179,
+      "height": 2048,
+      "description": "手を伸ばす、全身のキービジュアル。"
+    },
+    {
+      "src": "/assets/kv-singer-full.png",
+      "label": "SINGING KV / 通常衣装",
+      "alt": "マイクを持って歌うあさはねむゐの全身キービジュアル",
+      "kind": "full",
+      "width": 1447,
+      "height": 2048,
+      "description": "歌、うたうこともきくことも好き。"
+    }
+  ],
+  "featuredSongIds": [
+    "pLn4q_nuSX8",
+    "-hTa1S_I0wM",
+    "zkjlyAf3mPM"
+  ],
+  "announcements": [
+    {
+      "tag": "NEW COVER",
+      "title": "チョイス / NAME.O",
+      "body": "毎月13日、新しい歌ってみたを公開。",
+      "url": "https://www.youtube.com/watch?v=pLn4q_nuSX8",
+      "endsAt": null
+    },
+    {
+      "tag": "PROJECT",
+      "title": "showcase.A",
+      "body": "企画・イベントの詳細はこちら。",
+      "url": "/projects/showcase-a/",
+      "endsAt": null
+    },
+    {
+      "tag": "SHOP",
+      "title": "キャラクターグッズ",
+      "body": "ラインナップと販売状況をショップでチェック。",
+      "url": "https://asaha-nemui-shop.booth.pm/",
+      "endsAt": null
+    }
+  ],
+  "homeAbout": "京都出身の個人勢VTuber。歌ってみたと雑談を中心に、芸術やゲーム、ファッションの話も。映画には特にうるさい。気になったところから覗いてみてください。",
+  "projects": [
+    {
+      "slug": "fashion-show",
+      "title": "ファッションショー",
+      "english": "FASHION SHOW",
+      "summary": "衣装と世界観を楽しむ、あさはねむゐのファッションショー。",
+      "description": [
+        "ファッションを通して、いろいろな姿を届けています。",
+        "開催のお知らせはXへ。衣装や企画にまつわる記録も、ここに少しずつ残していきます。"
+      ],
+      "links": [
+        {
+          "label": "開催のお知らせ",
+          "url": "https://x.com/asa_nemui_zzz"
+        },
+        {
+          "label": "ファッションショップ",
+          "url": "https://asaha-nemui.booth.pm/"
+        }
+      ],
+      "photos": [],
+      "videos": [],
+      "records": []
+    },
+    {
+      "slug": "showcase-a",
+      "title": "showcase.A",
+      "english": "showcase.A",
+      "summary": "企画のお知らせと、イベントの記録。",
+      "description": [
+        "showcase.Aの情報をまとめたページです。",
+        "現在のお知らせ・参加方法は、公式の案内をご覧ください。"
+      ],
+      "links": [
+        {
+          "label": "showcase.A / 公式案内",
+          "url": "https://lit.link/showcase_a"
+        },
+        {
+          "label": "Xで最新情報を見る",
+          "url": "https://x.com/showcas_A"
+        }
+      ],
+      "photos": [],
+      "videos": [],
+      "records": []
+    }
+  ]
+}
