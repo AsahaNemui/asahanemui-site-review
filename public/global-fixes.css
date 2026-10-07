@@ -1,0 +1,110 @@
+/* Global layout refinements shared by every page. */
+.site-shell{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.site-shell>main{
+  flex:1 0 auto;
+}
+
+/* Keep the footer band full-bleed; align text edges to one content frame. */
+.site-footer{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  position:relative;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto;
+  grid-template-areas:
+    "name nav"
+    "copy copy";
+  align-items:center!important;
+  column-gap:clamp(2rem,4vw,5rem)!important;
+  row-gap:1.4rem!important;
+  padding-left:max(clamp(24px,5vw,80px),calc((100vw - 1440px)/2 + 56px))!important;
+  padding-right:max(clamp(24px,5vw,80px),calc((100vw - 1440px)/2 + 56px))!important;
+}
+.site-footer>.secret-star{
+  position:absolute;
+  left:max(clamp(24px,3vw,48px),calc((100vw - 1440px)/2 + 18px));
+  top:50%;
+  transform:translateY(-65%);
+}
+.site-footer>.footer-name{
+  grid-area:name;
+  justify-self:start;
+  text-align:left;
+}
+.site-footer>div{
+  grid-area:nav;
+  justify-self:end;
+  min-width:0;
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:flex-end;
+  gap:.85rem 1.4rem!important;
+}
+.site-footer>small{
+  grid-area:copy;
+  justify-self:start;
+  text-align:left;
+}
+
+/* Keep PROFILE key-visual label and artwork visually connected on desktop. */
+@media(min-width:851px){
+  .profile-kv{
+    grid-template-columns:minmax(160px,190px) minmax(0,620px)!important;
+    gap:clamp(24px,3vw,48px)!important;
+    justify-content:center!important;
+  }
+  .profile-kv-copy{
+    justify-self:stretch;
+  }
+}
+
+@media(max-width:850px){
+  .site-footer{
+    grid-template-columns:1fr!important;
+    grid-template-areas:
+      "star"
+      "name"
+      "nav"
+      "copy"!important;
+    align-items:start!important;
+    padding-left:clamp(20px,6vw,32px)!important;
+    padding-right:clamp(20px,6vw,32px)!important;
+    padding-bottom:calc(5.5rem + env(safe-area-inset-bottom))!important;
+  }
+  .site-footer>.secret-star{
+    position:static;
+    transform:none;
+    grid-area:star;
+    justify-self:start;
+  }
+  .site-footer>.footer-name{justify-self:start}
+  .site-footer>div{
+    justify-self:stretch;
+    justify-content:flex-start!important;
+    width:100%;
+    gap:.9rem 1.25rem!important;
+  }
+}
+
+/* The number occupies its own column; its circle never encroaches on the title. */
+.guide-section{display:grid;grid-template-columns:52px minmax(0,1fr);gap:24px;align-items:start}
+.guide-section>.card-number{width:52px;height:52px;align-self:start;flex-shrink:0;line-height:1;letter-spacing:0}
+.guide-section>div{min-width:0}
+.guide-section h3{min-height:52px;display:flex;align-items:center;margin-top:0}
+@media(max-width:700px){
+ .guide-section{grid-template-columns:40px minmax(0,1fr);gap:18px}
+ .guide-section>.card-number{width:40px;height:40px;font-size:12px}
+ .guide-section h3{min-height:40px;font-size:clamp(20px,5.5vw,25px);line-height:1.45}
+}
+
+/* Give long guideline entries a clear boundary and alternating quiet colour. */
+.guide-section{padding:28px 24px;margin-top:18px;border:1px solid #afa3bf;border-radius:12px;background:#efebf6}
+.guide-section:nth-child(even){background:#e8f2ee}
+@media(max-width:700px){.guide-section{padding:24px 18px}}
