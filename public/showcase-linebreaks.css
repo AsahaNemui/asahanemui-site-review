@@ -1,0 +1,144 @@
+/* Clauses stay together when they fit, with punctuation as the preferred break. */
+.showcase-break-line{display:block}
+.showcase-phrase{display:inline-block;max-width:100%;vertical-align:top;text-wrap:pretty;line-break:strict;word-break:normal;overflow-wrap:normal}
+
+@media(max-width:900px){
+.showcase-concept__grid{grid-template-columns:1fr}
+.showcase-concept article,.showcase-concept article+article{padding:24px 0;border-left:0}
+.showcase-concept article+article{border-top:1px solid var(--showcase-line)}
+.showcase-concept h2{max-width:none!important;word-break:normal;font-size:24px;line-height:1.6}
+.showcase-concept article>p:last-child{max-width:none}
+.showcase-break-line + .showcase-break-line::before{content:none}
+}
+@media(max-width:600px){
+.showcase-section{padding:48px 0;gap:26px}
+.showcase-concept h2{font-size:clamp(18px,5vw,23px)}
+.showcase-about__copy .showcase-lead{font-size:clamp(17px,4.5vw,21px);line-height:1.75;margin-bottom:24px;letter-spacing:-.025em}
+.showcase-about__copy p{margin-bottom:20px;line-height:1.85}
+.showcase-why__content h2,.showcase-format__intro h2,.showcase-projects__intro h2,.showcase-collab__intro h2,.showcase-next__content h2{font-size:clamp(25px,7vw,32px);line-height:1.55}
+.showcase-values__grid h2{font-size:clamp(16px,4.6vw,21px);line-height:1.6;letter-spacing:-.035em}
+.showcase-values__grid article{padding:24px 20px}
+.showcase-value__en{margin-bottom:24px!important}
+.showcase-value__no{font-size:38px;right:16px;top:12px}
+.showcase-values__grid article>p:last-child{font-size:14px;line-height:1.85}
+.showcase-format__intro{margin-bottom:28px;gap:18px}
+.showcase-format__grid div{min-height:104px;padding:18px 14px;gap:22px}
+.showcase-format__grid span{letter-spacing:.1em;font-size:9px}
+.showcase-format__grid strong{font-size:clamp(11px,3.2vw,14px)}
+.showcase-projects__intro{margin-bottom:26px}
+.showcase-files-note{margin-bottom:36px;font-size:11px}
+.showcase-file--active{margin-inline:0;padding-inline:18px}
+.showcase-file__tab{font-size:9px;letter-spacing:.14em;margin-bottom:24px}
+.showcase-file__body{padding-top:26px;gap:24px}
+.showcase-file__details>p:not(.showcase-file__date){font-size:14px;line-height:1.85}
+.showcase-file--back{font-size:8px;padding-inline:12px}
+.showcase-file--back strong{font-size:8px;letter-spacing:.08em}
+.showcase-why__copy,.showcase-collab__routes{margin-top:28px}
+}
+
+/* Section markers and article labels have distinct visual roles. */
+.showcase-section__label{border-top:2px solid #282137;padding-top:16px;align-self:start}
+.showcase-section__label p{color:#282137;font-weight:800;font-size:13px;letter-spacing:.2em}
+.showcase-section__label span{color:#857e91;font-size:12px}
+.showcase-concept__kicker{font-size:10px!important;letter-spacing:.14em;color:#84798f!important}
+.showcase-page p:not(.showcase-lead){text-wrap:pretty;line-break:strict;word-break:normal}
+.showcase-file--back{font-family:inherit;text-align:left;cursor:pointer;appearance:none}
+.showcase-file--back:focus-visible{outline:2px solid #7252b7;outline-offset:4px}
+.showcase-files .showcase-file--back.is-open{transform:translateY(-22px) rotate(0);background:#e5deef}
+.showcase-file--back.is-open strong{color:#5b36b1}
+@media(max-width:900px){
+.showcase-section__label{gap:12px;padding-top:14px;margin-bottom:8px}
+.showcase-concept article{padding-top:18px}
+}
+@media(max-width:600px){
+.showcase-section__label p{font-size:12px}
+.showcase-section__label{margin-bottom:12px}
+.showcase-concept__kicker{font-size:9px!important}
+.showcase-file--back.is-open strong{font-size:8px;letter-spacing:0}
+}
+
+/* Reserve the tab height and upward travel above the file stack. */
+.showcase-projects__intro{margin-bottom:72px}
+@media(max-width:600px){
+  .showcase-projects__intro{margin-bottom:64px}
+  .showcase-files:hover .showcase-file--third{transform:translate(10px,-10px) rotate(.65deg)}
+  .showcase-files:hover .showcase-file--second{transform:translate(4px,-5px) rotate(-.35deg)}
+  .showcase-files .showcase-file--back.is-open{transform:translateY(-22px) rotate(0)}
+}
+
+/* Touch feedback comes from the file motion, without a full-card tap flash. */
+.showcase-file--back{-webkit-tap-highlight-color:transparent;transition:transform .45s ease,background-color .3s ease}
+.showcase-file--back strong{transition:color .3s ease}
+@media(hover:none){
+  .showcase-files:hover .showcase-file--third:not(.is-open){transform:translateX(52px) rotate(1.7deg)}
+  .showcase-files:hover .showcase-file--second:not(.is-open){transform:translateX(22px) rotate(-1deg)}
+}
+@media(hover:none) and (max-width:600px){
+  .showcase-files:hover .showcase-file--third:not(.is-open){transform:translateX(10px) rotate(.65deg)}
+  .showcase-files:hover .showcase-file--second:not(.is-open){transform:translateX(4px) rotate(-.35deg)}
+}
+@media(prefers-reduced-motion:reduce){.showcase-file--back,.showcase-file--back strong{transition:none}}
+
+.showcase-format__intro{display:block;max-width:960px}
+.showcase-format__intro h2{font-size:clamp(30px,3.5vw,52px);line-height:1.4;text-wrap:pretty}
+.showcase-format__intro h2 .showcase-break-line{display:inline}
+.showcase-format__intro p{margin-top:22px;max-width:46em;text-wrap:pretty;line-height:1.9}
+.showcase-invite-note{display:block;margin-top:4px}
+@media(max-width:600px){
+ .showcase-format__intro h2{font-size:clamp(25px,7vw,32px)}
+ .showcase-format__intro h2 .showcase-break-line{display:block}
+ .showcase-format__intro p{margin-top:16px}
+}
+
+/* WHY: quiet editorial columns, with short aurora rules rather than cards. */
+.showcase-why__copy{gap:38px;align-items:start}
+.showcase-why__copy p{padding:0;margin:0;border:0;border-radius:0;background:transparent;line-height:2.05;font-size:16px;color:#51495d}
+.showcase-why__copy p::before{content:"";display:block;width:88px;height:2px;margin-bottom:26px;background:linear-gradient(90deg,#779a90,#b1a0c8)}
+.showcase-why__copy p:nth-child(2),.showcase-why__copy p:nth-child(3){background:transparent;border:0}
+.showcase-why__copy p:nth-child(2)::before{background:linear-gradient(90deg,#a18ab8,#9bacbf)}
+.showcase-why__copy p:nth-child(3)::before{background:linear-gradient(90deg,#809aaf,#a2b9b0)}
+/* CONCEPT: equal inset space and more room around the three columns. */
+.showcase-concept article,.showcase-concept article+article{padding:28px 26px 30px}
+.showcase-concept h2{line-height:1.65;margin:24px 0 22px}
+.showcase-concept article>p:last-child{max-width:none;line-height:2}
+.showcase-collab-note{display:block;margin-top:8px}
+@media(max-width:900px){
+ .showcase-concept article,.showcase-concept article+article{padding:28px 0}
+ .showcase-why__copy{gap:32px}
+ .showcase-why__copy p{padding:0;font-size:15px;line-height:1.95}
+ .showcase-why__copy p::before{width:64px;margin-bottom:18px}
+}
+
+/* Mobile chapters: leave more breathing room above each numbered heading. */
+@media(max-width:900px){
+ .showcase-section{padding-top:86px;padding-bottom:72px;gap:34px}
+ .showcase-section__label{margin-bottom:0}
+}
+@media(max-width:600px){
+ .showcase-section{padding-top:72px;padding-bottom:56px;gap:30px}
+ .showcase-section__label{padding-top:16px;margin-bottom:0}
+ .showcase-about__copy p:last-child{margin-bottom:0}
+ .showcase-concept article:first-child{padding-top:16px}
+ .showcase-format__intro{margin-bottom:32px}
+ .showcase-collab__routes{margin-top:36px}
+}
+
+/* One chapter rhythm: rule, chapter marker, then content. */
+@media(max-width:900px){
+ .showcase-section{row-gap:34px}
+ .showcase-section__label{padding-top:16px;margin:0;min-height:0;line-height:20px}
+ .showcase-section__label span,.showcase-section__label p{margin:0;line-height:20px}
+ .showcase-section> :nth-child(2){margin-top:0}
+ .showcase-about__copy>.showcase-lead{margin-top:0}
+ .showcase-concept article:first-child{padding-top:0}
+ .showcase-format__intro>h2,.showcase-next__content>h2{margin-top:0}
+}
+@media(max-width:600px){
+ .showcase-section{row-gap:30px}
+}
+
+/* Every chapter uses the same rule-to-marker distance, including WHAT'S NEXT. */
+.showcase-page .showcase-section__label{padding-top:16px;line-height:20px}
+.showcase-page .showcase-section__label span{line-height:20px;margin:0 0 8px}
+.showcase-page .showcase-section__label p{line-height:20px;margin:0}
+@media(max-width:900px){.showcase-page .showcase-section__label span{margin:0}}
