@@ -1,0 +1,229 @@
+/* showcase.A hero balance pass — scoped overrides only. */
+.showcase-hero{
+  min-height:min(72vh,760px);
+}
+
+.showcase-hero__inner{
+  width:min(1320px,calc(100% - 96px));
+  display:grid;
+  grid-template-columns:minmax(0,.78fr) minmax(420px,1fr);
+  gap:clamp(44px,6vw,110px);
+  align-items:center;
+}
+
+.showcase-hero__copy{
+  align-self:center;
+  padding-top:12px;
+  opacity:0;
+  transform:translateY(18px);
+  animation:showcaseHeroCopyIn .9s cubic-bezier(.22,1,.36,1) .08s forwards;
+}
+
+.showcase-eyebrow{
+  margin:0 0 34px;
+}
+
+.showcase-hero__message{
+  padding:0;
+}
+
+.showcase-hero__message strong{
+  margin-bottom:16px;
+  font-size:clamp(30px,3.05vw,46px);
+}
+
+.showcase-hero__message p{
+  font-size:clamp(18px,1.45vw,23px);
+}
+
+.showcase-hero h1{
+  justify-self:end;
+  align-self:center;
+  font-size:clamp(68px,6.15vw,104px);
+  transform:translateY(22px);
+  opacity:0;
+  animation:showcaseHeroLogoIn 1s cubic-bezier(.22,1,.36,1) .18s forwards;
+}
+
+.showcase-hero .showcase-dot{
+  position:relative;
+  filter:drop-shadow(0 0 10px rgba(133,201,233,.18));
+  animation:showcaseDotGlow 4.8s ease-in-out 1.15s infinite;
+}
+
+/* Concept cards: keep Japanese headings readable instead of breaking after a few kana. */
+.showcase-concept__grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+}
+.showcase-concept article{min-width:0}
+.showcase-concept h2{
+  font-size:clamp(21px,1.65vw,28px);
+  line-height:1.55;
+  letter-spacing:-.035em;
+  text-wrap:pretty;
+  word-break:keep-all;
+  overflow-wrap:normal;
+}
+.showcase-concept article:first-child h2{max-width:11.5em}
+
+/* Project 01: retain showcase.A structure, but let THE FIRST ORDER feel like an American diner. */
+.showcase-project-card{
+  background:
+    linear-gradient(90deg,rgba(177,28,39,.96) 0 8px,transparent 8px calc(100% - 8px),rgba(26,50,82,.96) calc(100% - 8px)),
+    linear-gradient(135deg,#fff7e8 0%,#f2e6cd 54%,#eadbbd 100%);
+  color:#17263c;
+  border:1px solid #213a5b;
+  box-shadow:0 18px 45px rgba(33,58,91,.12);
+}
+.showcase-project-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.15;
+  background-image:
+    linear-gradient(45deg,#233b5f 25%,transparent 25%,transparent 75%,#233b5f 75%),
+    linear-gradient(45deg,#233b5f 25%,transparent 25%,transparent 75%,#233b5f 75%);
+  background-size:34px 34px;
+  background-position:0 0,17px 17px;
+  mask-image:linear-gradient(180deg,transparent 0 62%,#000 88%);
+}
+.showcase-project-card:before{
+  color:rgba(32,52,82,.055);
+}
+.showcase-project-card__meta,.showcase-project-card__main,.showcase-project-card__links{position:relative;z-index:2}
+.showcase-project-card__meta p{color:#a11e2c}
+.showcase-project-card__meta span{color:#294668}
+.showcase-project-card h2{
+  color:#b01f2c;
+  text-shadow:3px 3px 0 #fff7e8,5px 5px 0 rgba(30,54,88,.13);
+}
+.showcase-project-card__date{color:#294668!important;font-weight:800}
+.showcase-project-card__copy p{color:#243349}
+.showcase-project-card__copy p:first-child{color:#a11e2c;font-weight:800}
+.showcase-project-card__links a{
+  border:1px solid #294668;
+  color:#203754;
+  background:rgba(255,249,237,.68);
+}
+.showcase-project-card__links a:hover{background:#a51f2d;color:#fff;border-color:#a51f2d}
+.showcase-project-card__stripe{height:10px;z-index:3}
+
+/* WHAT'S NEXT heading rows should share the same top baseline. */
+.showcase-next .showcase-section__label,
+.showcase-next__content{align-self:start}
+.showcase-next .showcase-section__label{padding-top:16px}
+.showcase-next__eyebrow{margin-top:0;min-height:17px}
+
+@keyframes showcaseHeroCopyIn{
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes showcaseHeroLogoIn{
+  to{opacity:1;transform:translateY(14px)}
+}
+
+@keyframes showcaseDotGlow{
+  0%,100%{filter:drop-shadow(0 0 8px rgba(133,201,233,.12))}
+  50%{filter:drop-shadow(0 0 15px rgba(173,145,232,.34))}
+}
+
+@media(max-width:1100px) and (min-width:901px){
+  .showcase-concept article{padding-right:22px}
+  .showcase-concept article+article{padding-left:22px}
+  .showcase-concept h2{font-size:22px}
+}
+
+@media(max-width:900px){
+  .showcase-hero{min-height:680px}
+  .showcase-hero__inner{
+    width:min(100% - 48px,720px);
+    grid-template-columns:1fr;
+    gap:48px;
+    align-content:center;
+  }
+  .showcase-hero__copy{padding-top:0}
+  .showcase-eyebrow{margin-bottom:24px}
+  .showcase-hero h1{
+    justify-self:start;
+    order:2;
+    font-size:clamp(58px,13vw,84px);
+    transform:translateY(12px);
+  }
+  .showcase-concept h2{max-width:none!important;word-break:normal}
+  .showcase-next .showcase-section__label{padding-top:16px}
+  @keyframes showcaseHeroLogoIn{
+    to{opacity:1;transform:translateY(4px)}
+  }
+}
+
+@media(max-width:600px){
+  .showcase-hero{min-height:610px}
+  .showcase-hero__inner{width:calc(100% - 40px);gap:38px}
+  .showcase-eyebrow{margin-bottom:20px}
+  .showcase-hero__message strong{font-size:28px;margin-bottom:12px}
+  .showcase-hero__message p{font-size:17px}
+  .showcase-hero h1{font-size:clamp(50px,14.1vw,68px)}
+  .showcase-project-card{margin-left:-20px;margin-right:-20px;border-left:0;border-right:0}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .showcase-hero__copy,.showcase-hero h1{
+    opacity:1!important;
+    transform:none!important;
+    animation:none!important;
+  }
+  .showcase-hero .showcase-dot{animation:none!important;filter:none}
+}
+
+
+/* PROJECT 01: a diner sign and an editorial information panel. */
+.showcase-project-card{
+  padding:clamp(24px,3.2vw,48px);
+  min-height:0;
+  background:#fff7e8;
+  border:1px solid #ded5c3;
+  border-radius:20px;
+  box-shadow:0 20px 60px -36px #20375455;
+}
+.showcase-project-card:before{content:none}
+.showcase-project-card:after{
+  inset:auto 0 0;height:12px;opacity:.15;mask-image:none;
+  background-size:24px 24px;background-position:0 0,12px 12px;
+}
+.showcase-project-card__stripe{height:4px}
+.showcase-project-card__meta{padding-bottom:22px;border-bottom:1px solid #213a5b22;gap:16px}
+.showcase-project-card__meta p{white-space:nowrap}
+.showcase-project-card__meta span{font-size:10px;letter-spacing:.13em}
+.showcase-project-card__main{
+  grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);
+  gap:clamp(28px,3.5vw,54px);align-items:center;margin:36px 0;
+}
+.showcase-project-card__visual{min-width:0;text-align:center}
+.showcase-project-card h2{font-size:inherit;line-height:1;text-shadow:none}
+.showcase-project-card__logo{display:block;width:100%;max-width:520px;height:auto;margin:auto}
+.showcase-project-card__date{font-size:11px;letter-spacing:.16em;margin-top:24px!important}
+.showcase-project-card__copy{
+  padding:clamp(24px,2.8vw,40px);border-radius:12px;background:#203754;
+  box-shadow:inset 0 3px 0 #79d7d4;
+}
+.showcase-project-card__copy p{color:#f5efdf;font-size:14px;line-height:2}
+.showcase-project-card__copy p:first-child{color:#a5e7e0;font-size:17px;line-height:1.65;margin-bottom:18px}
+.showcase-project-card__copy p:last-child{margin-bottom:0}
+.showcase-project-card__links{padding-top:24px;border-top:1px solid #213a5b22;gap:12px}
+.showcase-project-card__links a{min-width:0;flex:1;padding:16px 20px;border-radius:6px;background:transparent}
+.showcase-project-card__links a:first-child{background:#ad2431;color:#fff;border-color:#ad2431}
+.showcase-project-card__links a:hover,.showcase-project-card__links a:focus-visible{background:#203754;color:#fff;border-color:#203754}
+@media(max-width:1100px){
+  .showcase-project-card__main{grid-template-columns:1fr;gap:28px}
+  .showcase-project-card__logo{max-width:420px}
+  .showcase-project-card__copy{max-width:none}
+}
+@media(max-width:600px){
+  .showcase-project-card{margin-inline:0;padding:26px 20px 30px;border:1px solid #ded5c3;border-radius:16px}
+  .showcase-project-card__meta{gap:8px}
+  .showcase-project-card__main{margin:28px 0}
+  .showcase-project-card__copy{padding:24px 20px}
+  .showcase-project-card__links a{font-size:10px}
+}
