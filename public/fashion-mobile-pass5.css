@@ -1,0 +1,65 @@
+/* FASHION SHOW mobile readability + full-figure fit */
+@media(min-width:431px){
+  /* Desktop/tablet: always fit the entire FULL LOOK inside the modal visual column. */
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual{
+    display:grid!important;
+    place-items:center!important;
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual img{
+    display:block!important;
+    box-sizing:border-box!important;
+    width:100%!important;
+    height:100%!important;
+    max-width:100%!important;
+    max-height:100%!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    padding:1rem 1rem 1.25rem!important;
+  }
+}
+
+/* Keep one spacing rhythm around the manifesto on phones/tablets too. */
+@media(max-width:850px){
+  .fashion-about{
+    --fashion-manifesto-gap:clamp(2.9rem,8vw,3.8rem);
+    padding-bottom:var(--fashion-manifesto-gap)!important;
+  }
+  .fashion-manifesto{
+    margin-top:var(--fashion-manifesto-gap)!important;
+  }
+}
+
+@media(max-width:430px){
+  /* Give Japanese body copy more breathing room on narrow phones. */
+  .fashion-about{padding-left:2rem!important;padding-right:2rem!important}
+  .fashion-about__copy{max-width:32rem!important;margin-left:auto!important;margin-right:auto!important}
+  .fashion-about__copy p{font-size:1rem!important;line-height:2.05!important}
+  .fashion-collection__head{padding-left:.75rem;padding-right:.75rem}
+  .fashion-collection__title p{line-height:1.9}
+
+  /* Do not size FULL LOOK against iOS viewport units. Let the source image define its natural height. */
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    padding:1rem .65rem 1.6rem!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+  }
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    max-height:none!important;
+    margin:0 auto!important;
+    padding:0!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    box-sizing:border-box!important;
+  }
+}
