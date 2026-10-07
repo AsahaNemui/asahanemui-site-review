@@ -1,0 +1,201 @@
+/* Desktop/tablet LOOK detail frame stability */
+@media(min-width:851px){
+  /* Give the desktop dialog a definite height so percentage-sized artwork has a real containing block. */
+  .fashion-dialog{
+    height:min(90dvh,900px)!important;
+    max-height:90dvh!important;
+  }
+  .fashion-dialog__inner{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    grid-template-rows:auto minmax(0,1fr)!important;
+  }
+  .fashion-dialog__visual{
+    position:relative!important;
+    display:block!important;
+    min-width:0!important;
+    min-height:0!important;
+    height:100%!important;
+    box-sizing:border-box!important;
+    padding:0!important;
+    overflow:hidden!important;
+  }
+  /* Keep the artwork out of grid sizing completely: it is always fitted inside the definite visual frame. */
+  .fashion-dialog__visual img,
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual img,
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual img{
+    position:absolute!important;
+    top:1rem!important;
+    left:1.15rem!important;
+    display:block!important;
+    box-sizing:border-box!important;
+    width:calc(100% - 2.3rem)!important;
+    height:calc(100% - 2.35rem)!important;
+    max-width:none!important;
+    max-height:none!important;
+    padding:0!important;
+    margin:0!important;
+    aspect-ratio:auto!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+  }
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{
+    padding:0!important;
+  }
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual img{
+    top:clamp(2rem,4vw,4rem)!important;
+    left:clamp(2rem,4vw,4rem)!important;
+    width:calc(100% - 2 * clamp(2rem,4vw,4rem))!important;
+    height:calc(100% - 2 * clamp(2rem,4vw,4rem))!important;
+    filter:drop-shadow(0 18px 44px rgba(0,0,0,.22));
+  }
+  /* Keep the frame perfectly still while only the artwork fades. */
+  .fashion-dialog__visual.is-switching img{
+    opacity:.22!important;
+    transform:none!important;
+  }
+
+  /* Center the collection heading block by balancing the COLLECTION index column. */
+  .fashion-collection__head{
+    max-width:1320px!important;
+    grid-template-columns:120px minmax(0,1fr) 120px!important;
+    column-gap:clamp(1rem,3vw,2rem)!important;
+  }
+  .fashion-collection__title{
+    grid-column:2;
+  }
+
+  /* Use one shared rhythm above and below the manifesto. */
+  .fashion-about{
+    --fashion-manifesto-gap:clamp(4rem,5vw,5rem);
+    padding-bottom:var(--fashion-manifesto-gap)!important;
+  }
+  .fashion-manifesto{
+    margin-top:var(--fashion-manifesto-gap)!important;
+  }
+}
+
+/* Mobile follows the same equal-spacing rhythm around the manifesto. */
+@media(max-width:850px){
+  .fashion-about{
+    --fashion-manifesto-gap:2.75rem;
+    padding-bottom:var(--fashion-manifesto-gap)!important;
+  }
+  .fashion-manifesto{
+    margin-top:var(--fashion-manifesto-gap)!important;
+  }
+}
+
+/* Keep the return button vertically centered between teaser and footer. */
+.fashion-return{
+  padding:3.25rem 1.25rem!important;
+}
+
+/* Mobile expression controls remain visible while the artwork fills the viewport. */
+@media(max-width:430px){
+  .fashion-dialog__copy{
+    padding-bottom:calc(10rem + env(safe-area-inset-bottom))!important;
+  }
+  .fashion-dialog__faces{
+    position:fixed!important;
+    left:0!important;
+    right:0!important;
+    bottom:0!important;
+    z-index:70!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:.65rem 1rem calc(.65rem + env(safe-area-inset-bottom))!important;
+    border-top:1px solid rgba(255,255,255,.12)!important;
+    background:rgba(23,19,31,.94)!important;
+    -webkit-backdrop-filter:blur(16px);
+    backdrop-filter:blur(16px);
+    box-shadow:0 -14px 34px rgba(0,0,0,.24);
+  }
+  .fashion-expression-head{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:.8rem!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0 0 .55rem!important;
+  }
+  .fashion-expression-head>span{
+    display:block;
+    font-size:.58rem;
+    letter-spacing:.18em;
+  }
+  .fashion-expression-head button{
+    width:auto!important;
+    min-width:112px!important;
+    min-height:44px!important;
+    padding:.65rem .85rem!important;
+    border:1px solid rgba(255,255,255,.32)!important;
+    border-radius:0!important;
+    background:rgba(255,255,255,.04)!important;
+    color:rgba(255,255,255,.9)!important;
+    font-size:.62rem!important;
+    letter-spacing:.14em!important;
+    text-align:center;
+    touch-action:manipulation;
+    transition:background .16s ease,border-color .16s ease,color .16s ease;
+  }
+  .fashion-expression-head button[aria-pressed="true"]{
+    border-color:#fff!important;
+    background:#fff!important;
+    color:#17131f!important;
+  }
+  .fashion-expression-list{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:.5rem!important;
+    width:100%!important;
+    overflow:visible!important;
+    padding:0!important;
+  }
+  .fashion-expression-thumb{
+    flex:0 0 clamp(52px,14vw,62px)!important;
+    width:clamp(52px,14vw,62px)!important;
+    height:clamp(52px,14vw,62px)!important;
+    min-width:52px!important;
+    min-height:52px!important;
+    aspect-ratio:1/1!important;
+    border-width:1px!important;
+    touch-action:manipulation;
+  }
+  .fashion-expression-thumb:hover,
+  .fashion-expression-thumb:focus-visible{
+    transform:none!important;
+  }
+  .fashion-expression-thumb[aria-pressed="true"]{
+    border-color:#fff!important;
+    box-shadow:0 0 0 2px rgba(255,255,255,.92) inset!important;
+  }
+  .fashion-expression-thumb span{
+    right:.32rem!important;
+    bottom:.28rem!important;
+    padding:.14rem .28rem!important;
+    font-size:.52rem!important;
+  }
+
+  /* Footer links must wrap inside the phone width instead of overflowing right. */
+  .fashion-page-shell .site-footer{
+    align-items:flex-start!important;
+    overflow:hidden;
+  }
+  .fashion-page-shell .site-footer>div{
+    width:100%!important;
+    min-width:0!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:.9rem 1.25rem!important;
+  }
+  .fashion-page-shell .site-footer a{
+    flex:0 0 auto;
+    white-space:nowrap;
+  }
+}
