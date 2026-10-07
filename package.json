@@ -1,0 +1,17 @@
+{
+  "name": "asaha-nemui-official",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs && node scripts/build-public-media.mjs && node scripts/build-fashion.mjs && node scripts/build-showcase.mjs && node scripts/sanitize-image-metadata.mjs && node scripts/build-image-protection.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "node scripts/deploy.mjs",
+    "test": "node --test tests/*.test.mjs scripts/sync-youtube.test.mjs"
+  },
+  "devDependencies": {
+    "ffmpeg-static": "5.3.0",
+    "sharp": "0.35.5",
+    "wrangler": "4.142.0"
+  }
+}
