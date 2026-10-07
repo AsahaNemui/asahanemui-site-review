@@ -1,0 +1,106 @@
+/* Small post-release refinements for FASHION SHOW */
+.fashion-next{min-height:42vh;padding:3.8rem 1.5rem}
+.fashion-next>div{width:min(100%,1180px)}
+.fashion-next h2{max-width:1050px;margin:1.25rem auto 0;font-size:clamp(2.35rem,5.1vw,4.9rem);line-height:1.12;letter-spacing:-.045em;text-wrap:balance}
+.fashion-next strong{display:block;margin-top:clamp(2rem,3.5vw,3rem);font:700 clamp(1.55rem,3.6vw,3.35rem)/1 var(--font-en,Arial,sans-serif);letter-spacing:.12em;opacity:.9}
+
+/* Center the manifesto instead of letting it inherit the copy column's visual weight. */
+.fashion-manifesto{max-width:1000px;margin:clamp(2.8rem,5vw,4.5rem) auto 0!important;text-align:center;text-wrap:balance}
+.fashion-manifesto>span{display:block}
+.fashion-manifesto__offset{display:inline-block;margin-left:.28em}
+
+/* Bottom navigation: a restrained fashion-editorial back button. */
+.fashion-return{justify-content:center!important;padding:2.6rem 1.25rem 3.8rem!important}
+.fashion-return .fashion-return__link,.fashion-return .text-link{display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:44px;padding:.78rem 1.2rem;border:1px solid rgba(89,64,160,.32);border-radius:999px;color:#5742a0;text-decoration:none;font:600 .7rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.13em;background:rgba(255,255,255,.55);transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.fashion-return .fashion-return__link:hover,.fashion-return .text-link:hover{background:#fff;border-color:rgba(89,64,160,.58);transform:translateY(-1px)}
+.fashion-return .fashion-return__link span{transition:transform .18s ease}
+.fashion-return .fashion-return__link:hover span{transform:translateX(-3px)}
+
+/* LOOK detail: keep the full figure as the default and use expressions as selectable detail cuts. */
+.fashion-dialog .fashion-view-toggle{display:none!important}
+.fashion-dialog .fashion-face-choices:before,.fashion-dialog__faces:before{display:none!important;content:none!important}
+.fashion-dialog__description{order:1;margin-top:1.25rem}
+.fashion-dialog__faces{order:2;display:block!important;width:100%;max-width:100%;min-width:0;margin:1.75rem 0 0;overflow:visible!important}
+.fashion-dialog__hint{display:none}
+.fashion-expression-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:min(100%,300px);margin:0 0 1rem;font:600 .58rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.17em;color:rgba(255,255,255,.58)}
+.fashion-expression-head button{appearance:none;border:0;border-bottom:1px solid rgba(255,255,255,.38);padding:.28rem 0;background:none;color:rgba(255,255,255,.72);font:inherit;letter-spacing:.13em;cursor:pointer}
+.fashion-expression-head button[aria-pressed="true"]{color:#fff;border-color:#fff}
+.fashion-expression-list{display:flex!important;flex-wrap:wrap;align-items:flex-start;gap:.62rem;width:100%;max-width:100%;margin:0;overflow:visible}
+.fashion-expression-thumb{position:relative;appearance:none;flex:0 0 58px;width:58px;height:58px;min-width:58px;min-height:58px;border:1px solid rgba(255,255,255,.16);padding:0;background:#0f0c15;overflow:hidden;cursor:pointer;transition:border-color .15s ease,transform .15s ease,opacity .15s ease}
+.fashion-expression-thumb:hover,.fashion-expression-thumb:focus-visible{border-color:rgba(255,255,255,.72);transform:translateY(-2px)}
+.fashion-expression-thumb[aria-pressed="true"]{border-color:#fff;box-shadow:0 0 0 1px #fff inset}
+.fashion-expression-thumb img{display:block;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center center!important;padding:0!important;opacity:.88;transform:scale(1.06);transform-origin:center center}
+.fashion-expression-thumb[aria-pressed="true"] img{opacity:1}
+.fashion-expression-thumb span{position:absolute;right:.22rem;bottom:.18rem;padding:.08rem .2rem;background:rgba(10,8,14,.7);color:#fff;font:600 .46rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.08em}
+
+/* Keep the modal geometry stable while FULL / EXPRESSION images cross-fade inside it. */
+.fashion-dialog{box-sizing:border-box;max-width:calc(100vw - 36px);overflow-x:hidden!important}
+.fashion-dialog__inner{box-sizing:border-box;width:100%;max-width:100%;overflow-x:hidden!important}
+.fashion-dialog__copy{box-sizing:border-box;width:100%;max-width:100%;min-width:0;overflow-x:hidden!important}
+.fashion-dialog__visual{min-width:0;overflow:hidden!important}
+.fashion-dialog__visual img{transition:opacity .2s ease,transform .32s cubic-bezier(.2,.75,.25,1),filter .32s ease}
+.fashion-dialog__visual.is-switching img{opacity:0!important;transform:scale(.988)}
+.fashion-dialog[data-view="face"] .fashion-dialog__visual{aspect-ratio:auto;align-self:stretch;max-height:none}
+.fashion-dialog[data-view="face"] .fashion-dialog__visual img{width:min(82%,620px);height:auto;max-height:82%;aspect-ratio:1/1;object-fit:contain;padding:0;filter:drop-shadow(0 18px 44px rgba(0,0,0,.22));transform:scale(1)}
+
+/* Watermark must always sit over the image, including expression close-ups. */
+.fashion-dialog .fashion-protected{isolation:isolate}
+.fashion-dialog .fashion-protected img{position:relative;z-index:1}
+.fashion-dialog .fashion-protected:after{z-index:10!important;opacity:1!important}
+
+/* The LOOK grid should recover immediately after the detail modal closes. */
+.fashion-look{transition:filter .08s linear,opacity .08s linear,transform .28s ease!important}
+@media(hover:hover) and (pointer:fine){
+  .fashion-look-grid:has(.fashion-look:focus-within) .fashion-look:not(:focus-within){filter:none;opacity:1}
+}
+
+@media(min-width:851px){
+  .fashion-dialog{overflow:hidden!important}
+  .fashion-dialog__inner{grid-template-columns:minmax(0,1.18fr) minmax(340px,.82fr);height:min(88dvh,860px);min-height:0;overflow:hidden!important}
+  .fashion-dialog__visual{height:auto;min-height:0;align-self:stretch}
+  .fashion-dialog__copy{min-width:0;overflow:hidden!important;padding-right:clamp(1.5rem,2.4vw,2.2rem)}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{height:auto;min-height:0}
+}
+
+.fashion-page-shell .site-footer{padding-right:max(clamp(20px,4vw,64px),150px)}
+@media(max-width:850px){
+  .fashion-page-shell .site-footer{padding-right:clamp(20px,4vw,64px);padding-bottom:110px}
+  .fashion-next{padding-top:3.2rem;padding-bottom:3.4rem}
+  .fashion-next h2{font-size:clamp(2.1rem,9.5vw,3.6rem);line-height:1.08}
+  .fashion-next strong{font-size:clamp(1.55rem,7vw,2.7rem);letter-spacing:.1em}
+  .fashion-expression-head{width:100%;max-width:320px}
+  .fashion-expression-list{gap:.55rem}
+  .fashion-expression-thumb{flex-basis:54px;width:54px;height:54px;min-width:54px;min-height:54px}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{min-height:40dvh;display:grid;place-items:center}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual img{width:min(78vw,460px);max-height:46dvh}
+  .fashion-return{padding-bottom:4.8rem!important}
+
+  /* Normal Japanese wrapping on mobile. `pretty` was creating visually stepped line endings. */
+  .fashion-about__copy{width:100%;max-width:none}
+  .fashion-about__copy p{width:100%;margin-left:0;margin-right:0;text-align:left;text-wrap:wrap;line-break:strict;word-break:normal;overflow-wrap:normal}
+
+  /* Keep the manifesto to two intentional lines. */
+  .fashion-manifesto{width:100%;max-width:none;font-size:clamp(1.5rem,6.25vw,1.9rem)!important;line-height:1.42!important;letter-spacing:-.045em!important;text-wrap:wrap!important}
+  .fashion-manifesto>span{white-space:nowrap}
+  .fashion-manifesto__offset{margin-left:.34em}
+}
+
+@media(max-width:430px){
+  /* On phones, let the LOOK image own the first viewport instead of squeezing image + copy together. */
+  .fashion-dialog{width:100vw!important;max-width:100vw!important;height:100dvh!important;max-height:100dvh!important;overflow-y:auto!important;overflow-x:hidden!important}
+  .fashion-dialog__inner{display:block!important;width:100%!important;height:auto!important;min-height:100dvh;max-height:none!important;overflow:visible!important}
+  .fashion-dialog__top{position:sticky;top:0;z-index:30;background:#17131f}
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual{display:grid;place-items:center;width:100%;height:calc(100svh - 78px)!important;min-height:0!important;max-height:none!important;align-self:auto!important}
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual img{display:block;box-sizing:border-box!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;padding:.85rem .45rem 1.5rem!important}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{display:grid;place-items:center;width:100%;height:min(100vw,68svh)!important;min-height:0!important;max-height:none!important}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual img{width:min(92vw,520px)!important;height:auto!important;max-height:100%!important}
+  .fashion-dialog__copy{overflow:visible!important;padding:1.5rem 1.2rem max(7rem,env(safe-area-inset-bottom))!important}
+  .fashion-dialog__description{text-wrap:wrap}
+  .fashion-expression-list{padding-bottom:.25rem}
+
+  /* The teaser should read as two quiet editorial lines, never as 3-4 accidental wraps. */
+  .fashion-next{min-height:auto!important;padding:4.25rem 1rem 4rem!important}
+  .fashion-next .fashion-kicker{margin-bottom:1.35rem}
+  .fashion-next h2{max-width:none!important;margin:0 auto!important;font-size:clamp(1.9rem,7.8vw,2.45rem)!important;line-height:1.12!important;letter-spacing:-.035em!important;white-space:nowrap!important;text-wrap:nowrap!important}
+  .fashion-next strong{margin-top:2.15rem!important;font-size:clamp(1.2rem,5.2vw,1.65rem)!important;letter-spacing:.16em!important;opacity:.82}
+}
