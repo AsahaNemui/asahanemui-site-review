@@ -1,0 +1,67 @@
+/* Shared footer composition polish. */
+@media(min-width:851px){
+  .site-footer{
+    --footer-safe-edge:clamp(6rem,5vw,7.5rem);
+    position:relative!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding-left:var(--footer-safe-edge)!important;
+    padding-right:var(--footer-safe-edge)!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-areas:
+      "name nav"
+      "copy nav"!important;
+    align-items:center!important;
+    column-gap:clamp(3rem,6vw,8rem)!important;
+    row-gap:1rem!important;
+  }
+
+  /* Decorative star stays on the true geometric center of the footer band. */
+  .site-footer>.secret-star{
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    margin:0!important;
+    z-index:1;
+  }
+
+  /* The left copy uses one shared edge; navigation mirrors it on the right. */
+  .site-footer>.footer-name,
+  .site-footer>small{
+    justify-self:start!important;
+    align-self:center!important;
+    margin:0!important;
+    transform:none!important;
+    text-align:left!important;
+  }
+  .site-footer>.footer-name{grid-area:name!important}
+  .site-footer>small{grid-area:copy!important}
+
+  .site-footer>div{
+    grid-area:nav!important;
+    justify-self:end!important;
+    align-self:center!important;
+    min-width:0!important;
+    max-width:calc(50vw - var(--footer-safe-edge) - 2rem)!important;
+    margin:0!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:flex-end!important;
+    gap:.85rem 1.35rem!important;
+    text-align:right!important;
+  }
+}
+
+@media(max-width:850px){
+  .site-footer>.secret-star{
+    justify-self:center!important;
+  }
+  .site-footer>.footer-name,
+  .site-footer>small{
+    justify-self:start!important;
+    margin-left:0!important;
+    text-align:left!important;
+  }
+}
