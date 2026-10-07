@@ -1,0 +1,138 @@
+/* FASHION SHOW / collection archive */
+.fashion-page{overflow:hidden}
+.fashion-hero{min-height:min(70vh,720px);display:grid;place-items:center;position:relative;padding:clamp(5rem,9vw,7rem) 1.5rem 3.5rem;background:radial-gradient(circle at 20% 20%,rgba(178,146,255,.22),transparent 38%),radial-gradient(circle at 82% 28%,rgba(126,231,255,.16),transparent 34%),linear-gradient(145deg,#151126 0%,#241a38 52%,#12101d 100%);color:#fff;text-align:center}
+.fashion-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.055) 48%,transparent 70%);pointer-events:none}
+.fashion-hero__inner{position:relative;z-index:1;max-width:980px}
+.fashion-hero__eyebrow,.fashion-kicker,.fashion-collection__index,.fashion-look__number,.fashion-look__keywords,.fashion-scroll{font-family:var(--font-en,Arial,sans-serif);letter-spacing:.18em;text-transform:uppercase}
+.fashion-hero__eyebrow{font-size:.72rem;opacity:.62;margin:0 0 1.2rem}
+.fashion-hero h1{margin:0;font-size:clamp(3.4rem,9vw,7.8rem);line-height:.88;font-weight:500;letter-spacing:-.055em}
+.fashion-hero__lead{margin:1.5rem auto 0;max-width:680px;font-size:clamp(1rem,1.8vw,1.28rem);line-height:1.8;letter-spacing:.06em}
+.fashion-scroll{position:absolute;bottom:1.2rem;left:50%;transform:translateX(-50%);font-size:.62rem;opacity:.5}
+
+.fashion-about{max-width:1180px;margin:0 auto;padding:clamp(3.8rem,7vw,6rem) clamp(1.25rem,4vw,3rem)}
+.fashion-about__grid{display:grid;grid-template-columns:minmax(150px,.55fr) minmax(0,1.65fr);gap:clamp(2rem,6vw,5.5rem);align-items:start}
+.fashion-kicker{font-size:.68rem;opacity:.58}
+.fashion-about__copy{max-width:820px}
+.fashion-about__copy p{font-size:clamp(1rem,1.45vw,1.12rem);line-height:1.9;margin:0 0 1rem;text-wrap:pretty}
+.fashion-manifesto{margin:clamp(2.4rem,5vw,4.2rem) 0 0;font-size:clamp(2rem,4.7vw,4.4rem);line-height:1.18;font-weight:500;letter-spacing:-.04em}
+
+.fashion-collection{position:relative;padding:clamp(3.8rem,6.5vw,5.8rem) clamp(1rem,3vw,2.5rem)}
+.fashion-collection--seasons{background:linear-gradient(180deg,#f7f5fa 0%,#f4f0f8 100%);color:#18151d}
+.fashion-collection--directions{background:radial-gradient(circle at 70% 10%,rgba(131,115,179,.18),transparent 38%),linear-gradient(155deg,#181320,#231b2f 55%,#15121c);color:#f8f5fb}
+.fashion-collection__head{max-width:1280px;margin:0 auto clamp(2rem,4vw,3.5rem);display:grid;grid-template-columns:120px minmax(0,1fr);gap:clamp(1rem,4vw,3.5rem);align-items:end}
+.fashion-collection__index{font-size:.68rem;opacity:.55;padding-bottom:.25rem}
+.fashion-collection__title h2{font-size:clamp(2.8rem,7vw,6.2rem);line-height:.9;margin:0;font-weight:500;letter-spacing:-.05em}
+.fashion-collection__title h2 small{display:block;margin-top:.65rem;font-size:clamp(.85rem,1.4vw,1.05rem);font-weight:500;letter-spacing:.2em}
+.fashion-collection__title p{max-width:880px;margin:1.1rem 0 0;line-height:1.75;opacity:.78;text-wrap:pretty}
+
+.fashion-look-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(.65rem,1.35vw,1.1rem);align-items:start}
+.fashion-look{min-width:0;position:relative;transition:filter .4s ease,opacity .4s ease,transform .4s ease}
+@media(hover:hover) and (pointer:fine){
+  .fashion-look-grid:has(.fashion-look:hover) .fashion-look:not(:hover),.fashion-look-grid:has(.fashion-look:focus-within) .fashion-look:not(:focus-within){filter:brightness(.7);opacity:.78}
+  .fashion-look:hover,.fashion-look:focus-within{z-index:3;transform:translateY(-.35rem)}
+  .fashion-look:hover .fashion-look__button img,.fashion-look:focus-within .fashion-look__button img{transform:scale(1.045)}
+  .fashion-look:hover .fashion-look__open,.fashion-look:focus-within .fashion-look__open{opacity:1;transform:none}
+}
+.fashion-look__stage{position:relative;aspect-ratio:3/4;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:rgba(255,255,255,.32);border:1px solid rgba(130,120,145,.14)}
+.fashion-collection--directions .fashion-look__stage{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.09)}
+.fashion-look__button{appearance:none;border:0;background:none;padding:0;width:100%;height:100%;display:flex;align-items:flex-end;justify-content:center;cursor:pointer;position:relative;z-index:1}
+.fashion-look__button:focus-visible{outline:2px solid currentColor;outline-offset:-4px}
+.fashion-look__button img{width:100%;height:100%;object-fit:contain;object-position:center bottom;transition:transform .4s ease,opacity .28s ease;user-select:none;-webkit-user-drag:none}
+.fashion-look__open{position:absolute;z-index:3;right:.7rem;bottom:.65rem;padding:.45rem .55rem;background:rgba(18,14,27,.72);color:#fff;font:600 .52rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.14em;opacity:.65;transform:translateY(.15rem);transition:opacity .3s ease,transform .3s ease;pointer-events:none}
+.fashion-look__meta{padding:.8rem .1rem 1rem}
+.fashion-look__number{font-size:.56rem;opacity:.5}
+.fashion-look__title{font-size:clamp(1.15rem,1.9vw,1.75rem);margin:.3rem 0 .35rem;font-weight:600;letter-spacing:.02em}
+.fashion-look__keywords{font-size:.54rem;line-height:1.65;opacity:.62}
+
+.fashion-view-toggle{display:flex;gap:1rem;align-items:center;margin:.9rem 0 .7rem}
+.fashion-view-toggle button,.fashion-face-choices button{appearance:none;border:0;border-bottom:1px solid transparent;background:transparent;color:inherit;padding:.25rem 0;font:inherit;font-size:.67rem;letter-spacing:.14em;cursor:pointer;opacity:.48}
+.fashion-view-toggle button[aria-pressed="true"],.fashion-face-choices button[aria-pressed="true"]{border-color:currentColor;opacity:1}
+.fashion-face-choices{display:flex;align-items:center;gap:.65rem;margin-top:.55rem}
+.fashion-face-choices:before{content:"EXPRESSION";font:500 .5rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.14em;opacity:.4;margin-right:.2rem}
+.fashion-face-choices[hidden]{display:none!important}
+
+.fashion-protected{position:relative}
+.fashion-collection--seasons .fashion-look__stage.fashion-protected:after{opacity:.72}
+.fashion-image-missing:before{content:"IMAGE PREPARING";position:absolute;inset:0;display:grid;place-items:center;z-index:1;font:600 .62rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.22em;opacity:.28}
+.fashion-image-missing img{visibility:hidden}
+
+.fashion-next{min-height:46vh;display:grid;place-items:center;text-align:center;padding:4rem 1.5rem;background:#0f0d15;color:#fff}
+.fashion-next h2{font-size:clamp(2.5rem,7vw,6.2rem);margin:.45rem 0 .8rem;letter-spacing:-.055em;font-weight:500}
+.fashion-next p{font-size:clamp(1rem,1.8vw,1.2rem);line-height:1.7;opacity:.72}
+.fashion-next strong{display:block;margin-top:1.6rem;font:600 .65rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.22em;opacity:.48}
+.fashion-return{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 3.5rem;display:flex;justify-content:flex-start}
+
+.fashion-dialog{width:min(96vw,1180px);max-height:90dvh;border:0;padding:0;background:#17131f;color:#fff;box-shadow:0 30px 90px rgba(0,0,0,.58)}
+.fashion-dialog::backdrop{background:rgba(8,6,12,.82);backdrop-filter:blur(12px)}
+.fashion-dialog__inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(310px,.85fr);grid-template-rows:auto minmax(0,1fr);max-height:90dvh;min-height:min(76dvh,760px)}
+.fashion-dialog__top{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border-bottom:1px solid rgba(255,255,255,.1);font:.62rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.17em}
+.fashion-dialog__close{border:0;background:none;color:inherit;font:inherit;letter-spacing:.12em;cursor:pointer;min-height:44px;padding:.4rem}
+.fashion-dialog__visual{position:relative;display:grid;place-items:center;overflow:hidden;min-height:0;background:radial-gradient(circle at 50% 35%,rgba(167,136,210,.18),transparent 55%);transition:aspect-ratio .25s ease}
+.fashion-dialog__visual img{display:block;width:100%;height:100%;max-height:calc(90dvh - 62px);object-fit:contain;object-position:center center;user-select:none;-webkit-user-drag:none;transition:opacity .28s ease}
+.fashion-dialog[data-view="full"] .fashion-dialog__visual img{object-position:center bottom;padding:1.2rem 1rem 0}
+.fashion-dialog[data-view="face"] .fashion-dialog__visual{aspect-ratio:1/1;align-self:center;max-height:calc(90dvh - 90px)}
+.fashion-dialog[data-view="face"] .fashion-dialog__visual img{aspect-ratio:1/1;object-fit:contain;padding:0}
+.fashion-dialog__copy{padding:clamp(1.4rem,3vw,2.6rem);display:flex;flex-direction:column;justify-content:center;min-width:0}
+.fashion-dialog__copy h2{margin:.35rem 0 .5rem;font-size:clamp(2.6rem,5vw,5rem);line-height:.88;letter-spacing:-.04em}
+.fashion-dialog__keywords{font:.62rem/1.7 var(--font-en,Arial,sans-serif);letter-spacing:.16em;opacity:.6}
+.fashion-dialog__description{font-size:clamp(.92rem,1.25vw,1.05rem);line-height:1.85;opacity:.84;max-width:34em;margin:1rem 0 0;text-wrap:pretty}
+.fashion-dialog__hint{margin:1.2rem 0 0;font-size:.72rem;line-height:1.6;opacity:.42}
+.fashion-dialog .fashion-view-toggle button,.fashion-dialog .fashion-face-choices button{color:#fff}
+.fashion-dialog__faces{margin-bottom:.45rem}
+.fashion-dialog__number{font:.58rem/1 var(--font-en,Arial,sans-serif);letter-spacing:.16em;opacity:.5}
+
+[data-fashion-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+[data-fashion-reveal].is-visible{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .fashion-about__grid,.fashion-collection__head{grid-template-columns:1fr}
+  .fashion-about{padding-top:3.4rem;padding-bottom:3.8rem}
+  .fashion-manifesto{margin-top:2.3rem}
+  .fashion-collection{padding-top:3.2rem;padding-bottom:3.5rem}
+  .fashion-collection__head{margin-bottom:2rem}
+  .fashion-collection__title p{max-width:100%}
+  .fashion-look-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
+  .fashion-look__meta{padding:.65rem .05rem 1rem}
+  .fashion-look__title{font-size:1.05rem}
+  .fashion-look__keywords{font-size:.49rem}
+  .fashion-look__number{font-size:.5rem}
+  .fashion-look__open{font-size:.46rem;right:.45rem;bottom:.45rem}
+  .fashion-protected:after{background-size:150px 95px}
+  .fashion-hero{min-height:62svh}
+  .fashion-hero h1{font-size:clamp(3.5rem,16vw,6.2rem)}
+  .fashion-dialog{width:min(96vw,720px);max-height:94dvh}
+  .fashion-dialog__inner{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr) auto;max-height:94dvh;min-height:0}
+  .fashion-dialog__top{grid-column:1}
+  .fashion-dialog__visual{min-height:44dvh}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{aspect-ratio:1/1;min-height:0;max-height:58dvh}
+  .fashion-dialog__visual img{max-height:58dvh}
+  .fashion-dialog__copy{padding:1.25rem 1.2rem 1.5rem;justify-content:flex-start}
+  .fashion-dialog__copy h2{font-size:clamp(2.2rem,10vw,3.6rem)}
+}
+
+@media(max-width:430px){
+  .fashion-collection{padding-left:.7rem;padding-right:.7rem}
+  .fashion-look-grid{gap:.4rem}
+  .fashion-about{padding-left:1.05rem;padding-right:1.05rem}
+  .fashion-dialog{width:100vw;max-height:100dvh;height:100dvh}
+  .fashion-dialog__inner{max-height:100dvh;height:100dvh}
+  .fashion-dialog__visual{min-height:0}
+  .fashion-dialog[data-view="full"] .fashion-dialog__visual{min-height:44dvh}
+  .fashion-dialog[data-view="face"] .fashion-dialog__visual{width:100%;aspect-ratio:1/1;max-height:none}
+  .fashion-dialog__copy{overflow:auto}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .fashion-look,.fashion-look__button img,.fashion-dialog__visual,.fashion-dialog__visual img,[data-fashion-reveal]{transition:none!important}
+  .fashion-look:hover,.fashion-look:focus-within,[data-fashion-reveal]{transform:none}
+  [data-fashion-reveal]{opacity:1}
+}
+
+.fashion-dialog[open]{animation:fashion-dialog-open .38s cubic-bezier(.16,1,.3,1)}
+.fashion-dialog.is-closing{animation:fashion-dialog-close .32s cubic-bezier(.4,0,.2,1) both;pointer-events:none}
+.fashion-dialog.is-closing::backdrop{animation:fashion-dialog-backdrop-close .32s ease both}
+@keyframes fashion-dialog-open{from{opacity:0;transform:translateY(18px) scale(.975);filter:blur(3px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes fashion-dialog-close{from{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}to{opacity:0;transform:translateY(14px) scale(.975);filter:blur(2px)}}
+@keyframes fashion-dialog-backdrop-close{from{background:rgba(8,6,12,.82);backdrop-filter:blur(12px)}to{background:transparent;backdrop-filter:blur(0)}}
+@media(prefers-reduced-motion:reduce){.fashion-dialog[open],.fashion-dialog.is-closing{animation:none!important}.fashion-dialog.is-closing::backdrop{animation:none!important}}
+
